@@ -1,0 +1,229 @@
+header {
+  background-color: black;
+  color: white;
+  font-family: Georgia, serif;
+  padding-top: 20px;
+  display: flex;
+  font-size: 2em;
+}
+
+body{
+  background-color: black;
+  color: white;
+  justify-content: center;
+}
+
+p{
+  padding-left: 15%;
+  padding-right: 15%;
+}
+
+pre{
+  font-family: Georgia, serif;
+  font-size: 1.2em;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+
+.section {
+  padding: 50px 0;
+}
+
+footer {
+  background-color: #000000;
+  color: white;
+  padding: 30px 0;
+}
+
+table{
+  margin: 0 auto;
+}
+
+
+button {
+  --color: rgb(46, 46, 46);
+  font-family: inherit;
+  display: inline-block;
+  width: 8em;
+  height: 2.6em;
+  line-height: 2.5em;
+  margin-top: 7px;
+  margin-bottom: 45px;
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+  border: 2px solid var(--color);
+  transition: color 0.5s;
+  z-index: 1;
+  font-size: 17px;
+  border-radius: 6px;
+  font-weight: 500;
+  color: var(--color);
+}
+
+button:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  background: var(--color);
+  height: 150px;
+  width: 200px;
+  border-radius: 50%;
+}
+
+button:hover {
+  color: #fff;
+}
+
+button:before {
+  top: 100%;
+  left: 100%;
+  transition: all 0.7s;
+}
+
+button:hover:before {
+  top: -30px;
+  left: -30px;
+}
+
+button:active:before {
+  background: #000000;
+  transition: background 0s;
+}
+
+
+.card {
+      width: 400px;
+      height: 520px;
+      padding: .8em;
+      background: #f5f5f5;
+      position: relative;
+      overflow: visible;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    }
+
+    .card-carousel {
+      width: 100%;
+      height: 600px;
+      border-radius: .5rem;
+      overflow: hidden;
+    }
+
+    .card-carousel img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .card-info {
+      padding-top: 10%;
+    }
+
+    svg {
+      width: 20px;
+      height: 20px;
+    }
+
+    .card-footer {
+      width: 100%;
+      padding-top: 10px;
+      border-top: 1px solid #ddd;
+    }
+
+    .text-title {
+      font-weight: 900;
+      font-size: 1.2em;
+      line-height: 1.5;
+    }
+
+    .text-body {
+      font-size: .9em;
+      padding-bottom: 10px;
+    }
+
+    .logo-style{
+        border-radius: 30px;
+    }
+
+    nav {
+      font-size: 20px;
+      top: 10%;
+      align-items: center;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 15px;
+      margin: 0 auto;
+      
+    }
+
+    nav a {
+      text-decoration: none;
+      color: black;
+      background-color: white;
+      padding: 10px 25px;
+      border-radius: 30px;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    nav a.active {
+      background-color: #fcd84c;
+    }
+
+    nav a:hover {
+      transform: scale(1.05);
+    }
+
+    .carousel{
+      max-width: 700px;
+      max-height: 900px;
+      align-items: center;
+      display: flex;
+      justify-content: center;
+      margin: 0 auto;
+    }
+
+    .logo {
+  border-radius: 50%; 
+  transition: transform 0.2s ease;
+}
+
+a{
+  text-decoration: none;
+}
+
+.logo:hover {
+  transform: scale(1.1); 
+}
+
+.logo_style:focus,
+.logo:focus {
+  outline: none; 
+  box-shadow: none;
+}
+
+.fade-out {
+  opacity: 1;
+  transition: opacity 0.5s ease-out;
+}
+
+.fade-out.hide {
+  opacity: 0;
+}
+
+body {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+body.loaded {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+body.fade-out {
+  opacity: 0;
+  transform: translateY(30px);
+}
